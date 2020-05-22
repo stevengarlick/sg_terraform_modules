@@ -1,28 +1,29 @@
-variable "vpc_name" {
-    description = "Name of the VPC"
-    type = string
+variable "name" {
+  description = "VPC Name"
+  type = string
 }
 
-variable "vpc_cidr" {
-    description = "CIDR range of entire VPC"
-    type = string
+variable "cidr" {
+  description = "VPC cidr range"
+  type = string
 }
 
-variable "vpc_azs" {g
-    description = "List of availability zones within the VPC"
-    type = list
+variable "azs" {
+  description = "Availability Zones"
+  type = list 
 }
 
 variable "private_subnets" {
-    description = "List of cidr ranges for private subnets"
-    type = list
+  description = "VPC Private Subnets"
+  type = list
 }
 
 variable "public_subnets" {
-    description = "List of cidr ranges for public subnets"
-    type = list
+  description = "VPC Public Subnets"
+  type = list
 }
 
-variable "default_tags" { 
-    type = map
+variable "tags" {
+  description = "Default Tags"
+  type = map
 }
