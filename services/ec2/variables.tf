@@ -18,7 +18,7 @@ variable "ec2_instance_type" {
     type = string
 }
 
-variable "key_name" {
+variable "ec2_key_name" {
     description = "name of ssh key generated."
     type = string
 }
