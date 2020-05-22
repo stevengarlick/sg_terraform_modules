@@ -39,5 +39,5 @@ variable "ec2_subnet_id" {
 }
 
 variable "default_tags" { 
-    type = "map" 
+    type = map
 }
