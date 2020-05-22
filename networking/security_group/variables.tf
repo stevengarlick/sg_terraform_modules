@@ -30,3 +30,4 @@ variable "sg_ingress_rules" {
 variable "sg_ingress_with_cidr_blocks" {
     description = "fully customized ingress rule for security group."
     type = map
+}
