@@ -8,21 +8,21 @@ variable "vpc_cidr" {
     type = string
 }
 
-variable "vpc_azs" {
+variable "vpc_azs" {g
     description = "List of availability zones within the VPC"
-    type = List
+    type = list
 }
 
 variable "private_subnets" {
     description = "List of cidr ranges for private subnets"
-    type = List
+    type = list
 }
 
 variable "public_subnets" {
     description = "List of cidr ranges for public subnets"
-    type = List
+    type = list
 }
 
 variable "default_tags" { 
-    type = "map" 
+    type = map
 }
